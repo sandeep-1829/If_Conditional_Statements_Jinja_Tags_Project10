@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+<!-- ***---If Condition---***
+
+            {% if a > b %}
+                <h1>If Condition</h1>
+                <h1>A is Greater Than B</h1>
+            {% endif %}
+
+            
+*---Normal If-Else Conditions---*
+            
+            
+        {% if a > b %}
+            <h1>If Condition</h1>
+            <h1>A is Greater Than B</h1>
+        {% else %}
+            <h1>Else Condition</h1>
+            <h1>B is Greater Than A</h1>
+        {% endif %}
+        -->
+
+
+<!----- If-Elif-Else -----//
+
+        {% if a > b and a > c %}
+            <h1>If condition</h1>
+            <h1>A Greater Than B,C</h1>
+        {% elif b > c %}
+            <h1>Elif Condition</h1>
+            <h1>B is Greater Than A,C</h1>
+        {% else %}
+            <h1>Else Condition</h1>
+            <h1>C is Greater Than A,B</h1>
+        {% endif %}
+        -->
+
+
+<!-- Nested If Conditions -->
+
+        {% if a > b %}
+            {% if a > c%}
+                <h1>If Condition</h1>
+                <h1>A is Greater Than B,C</h1>
+            {% else %}
+                <h1>Else Condition</h1>
+                <h1>C Is Greater Than A,B</h1>
+            {% endif %}
+        {% else %}
+            {% if b > c %}
+                <h1>If Condition</h1>
+                <h1>B Is Greater Than A,C</h1>
+            {% else %}
+                <h1>Else Condition</h1>
+                <h1>C Is Greater Than A,B</h1>
+            {% endif %}
+        {% endif %}
+        
+    </center>
+</body>
+</html>
